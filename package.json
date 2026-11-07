@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexlmiller/randomizer.git"
+    "url": "git+https://github.com/alexlmiller/emdash-randomizer.git"
   },
   "private": true,
   "files": [

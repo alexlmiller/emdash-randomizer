@@ -1,4 +1,4 @@
-# Randomizer
+# EmDash Randomizer
 
 Send visitors to a random published post. [Try it on my blog](https://blog.alexmiller.net/random).
 
