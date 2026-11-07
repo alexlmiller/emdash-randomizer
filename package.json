@@ -3,12 +3,34 @@
   "version": "1.0.0",
   "description": "Uncached random post redirects for EmDash sites",
   "type": "module",
-  "exports": "./index.mjs",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./sandbox": "./dist/plugin.mjs",
+    "./astro": "./astro.mjs"
+  },
   "peerDependencies": {
     "emdash": "~1.4.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexlmiller/randomizer.git"
+  },
+  "private": true,
+  "files": [
+    "dist/*.mjs",
+    "dist/*.d.mts",
+    "dist/manifest.json",
+    "astro.mjs",
+    "endpoint.mjs",
+    "emdash-plugin.jsonc"
+  ],
+  "scripts": {
+    "build": "emdash-plugin build",
+    "validate": "emdash-plugin validate",
+    "bundle": "emdash-plugin bundle",
+    "test": "node --experimental-strip-types --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@emdash-cms/plugin-cli": "^0.13.5"
   }
 }
