@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/@emdash-cms/plugin-cli/schemas/emdash-plugin.schema.json",
+  "slug": "randomizer",
+  "name": "Randomizer",
+  "description": "Send visitors to a random published entry, optionally scoped by category, tag or byline.",
+  // Reserved development handle. Set the release owner's identity before publishing.
+  "publisher": "randomizer.invalid",
+  "license": "LicenseRef-Proprietary",
+  "author": { "name": "Alex Miller", "url": "https://github.com/alexlmiller" },
+  "security": { "url": "https://github.com/alexlmiller/randomizer/security" },
+  "repo": "https://github.com/alexlmiller/randomizer",
+  "release": { "requires": { "env:emdash": ">=1.4.0" } },
+  "capabilities": ["content:read", "taxonomies:read", "bylines:read"],
+  "allowedHosts": [],
+  "storage": {},
+  "admin": {
+    "settingsSchema": {
+      "collections": {
+        "type": "string", "label": "Eligible collections", "default": "posts",
+        "description": "Comma-separated collection slugs. The first supplies the default and filtered routes."
+      }
+    }
+  }
+}
