@@ -1,0 +1,14 @@
+{
+  "name": "emdash-plugin-randomizer",
+  "version": "1.0.0",
+  "description": "Uncached random post redirects for EmDash sites",
+  "type": "module",
+  "exports": "./index.mjs",
+  "peerDependencies": {
+    "emdash": "~1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlmiller/randomizer.git"
+  }
+}
