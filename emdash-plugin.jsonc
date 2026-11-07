@@ -3,8 +3,7 @@
   "slug": "randomizer",
   "name": "Randomizer",
   "description": "Send visitors to a random published entry, optionally scoped by category, tag or byline.",
-  // Reserved development handle. Set the release owner's identity before publishing.
-  "publisher": "randomizer.invalid",
+  "publisher": "did:plc:24gklxl5ljmwp3txk7tl32si",
   "license": "MIT",
   "author": { "name": "Alex Miller", "url": "https://github.com/alexlmiller" },
   "security": { "url": "https://github.com/alexlmiller/randomizer/security/advisories/new" },
