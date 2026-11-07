@@ -32,5 +32,6 @@
   },
   "devDependencies": {
     "@emdash-cms/plugin-cli": "^0.13.5"
-  }
+  },
+  "license": "MIT"
 }
