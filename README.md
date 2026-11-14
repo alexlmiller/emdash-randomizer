@@ -40,3 +40,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
+
+## Development dependency security
+
+Use `npm ci`, `npm test`, `npm run validate`, and `npm run bundle` before publishing. The exact `zod@4.5.4` override patches the older EmDash peer graph to compatible Zod 4.6.7; remove it when the supported EmDash packages adopt a fixed version. TypeScript 5.9 is explicit for tsdown 0.20 declaration generation, while plugin-cli retains its own TypeScript 6 dependency. These tooling changes do not publish a plugin release or replace the blog’s separately vendored Randomizer 1.0.1 package.
